@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="React to message"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:rowCount="2"
+        android:useDefaultMargins="true">
+
+        <TextView android:id="@+id/reaction1" style="@style/ReactionEmoji" />
+        <TextView android:id="@+id/reaction2" style="@style/ReactionEmoji" />
+        <TextView android:id="@+id/reaction3" style="@style/ReactionEmoji" />
+        <TextView android:id="@+id/reaction4" style="@style/ReactionEmoji" />
+        <TextView android:id="@+id/reaction5" style="@style/ReactionEmoji" />
+        <TextView android:id="@+id/reaction6" style="@style/ReactionEmoji" />
+        <TextView android:id="@+id/reaction7" style="@style/ReactionEmoji" />
+        <TextView android:id="@+id/reaction8" style="@style/ReactionEmoji" />
+        <TextView android:id="@+id/reaction9" style="@style/ReactionEmoji" />
+        <TextView android:id="@+id/reaction10" style="@style/ReactionEmoji" />
+
+    </GridLayout>
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:paddingBottom="4dp">
+
+    <!-- YENİ: Cavab verilən mesajı göstərən bölüm -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/replyingToLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_reply_footer"
+        android:padding="8dp"
+        android:layout_marginBottom="4dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/replyingToTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Replying to"
+            android:textColor="?attr/colorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/replyingToUsername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="?attr/colorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@id/replyingToTitle"
+            app:layout_constraintEnd_toStartOf="@id/cancelReplyButton"
+            app:layout_constraintStart_toEndOf="@id/replyingToTitle"
+            tools:text="Ruhid Javad" />
+
+        <TextView
+            android:id="@+id/replyingToMessagePreview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            app:layout_constraintEnd_toStartOf="@id/cancelReplyButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/replyingToTitle"
+            tools:text="This is the message being replied to..." />
+
+        <ImageButton
+            android:id="@+id/cancelReplyButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="?attr/colorOnSurfaceVariant"
+            android:contentDescription="Cancel reply" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/messageInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|bottom">
+
+        <ImageButton
+            android:id="@+id/attachButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_attachment"
+            app:tint="?attr/colorOnSurfaceVariant"
+            android:contentDescription="Attach File" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_message_input"
+            android:minHeight="48dp">
+
+            <EditText
+                android:id="@+id/messageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:hint="Write a message..."
+                android:inputType="textMultiLine|textCapSentences"
+                android:maxHeight="120dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="12dp" />
+
+            <LinearLayout
+                android:id="@+id/voiceRecordingLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <View
+                    android:id="@+id/recordingIndicator"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/bg_recording_indicator" />
+
+                <TextView
+                    android:id="@+id/recordingTimeTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="16sp"
+                    tools:text="0:15" />
+
+                <ImageButton
+                    android:id="@+id/cancelRecordingButton"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_cancel"
+                    app:tint="?attr/colorOnSurfaceVariant"
+                    android:contentDescription="Cancel Recording" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/actionButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/fab_background"
+            android:src="@drawable/ic_microphone"
+            app:tint="?attr/colorOnPrimary"
+            android:contentDescription="Send or Record" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Qatman 1: Əsas arxa fon rəngi -->
+    <item android:drawable="?attr/colorSurface" />
+
+    <!-- Qatman 2: Yarı-şəffaf, təkrarlanan naxış -->
+    <item>
+        <bitmap
+            android:src="@drawable/ic_chat_pattern"
+            android:tileMode="repeat"
+            android:alpha="0.05" />
+    </item>
+
+</layer-list>

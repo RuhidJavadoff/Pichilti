@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "31445935182",
+    "project_id": "pichiltichat",
+    "storage_bucket": "pichiltichat.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31445935182:android:066000faafcddb98584f1f",
+        "android_client_info": {
+          "package_name": "com.ruhidjavadoff.pichilti"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxBxoGG8kATymZOLvK0un8-eny76PQ8bk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

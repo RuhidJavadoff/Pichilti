@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- Yüngül bir arxa fon rəngi -->
+    <solid android:color="?attr/colorSurfaceVariant" />
+    <!-- Yuxarı küncləri yumşaldırıq -->
+    <corners
+        android:topLeftRadius="12dp"
+        android:topRightRadius="12dp" />
+</shape>

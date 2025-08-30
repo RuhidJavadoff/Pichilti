@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:baselineAligned="false">
+
+        <TextView style="@style/AttachmentMenuItem" android:id="@+id/option_image" android:text="Image" app:drawableTopCompat="@drawable/ic_image" />
+        <TextView style="@style/AttachmentMenuItem" android:id="@+id/option_video" android:text="Video" app:drawableTopCompat="@drawable/ic_videocam" />
+        <TextView style="@style/AttachmentMenuItem" android:id="@+id/option_music" android:text="Music" app:drawableTopCompat="@drawable/ic_music_note" />
+        <TextView style="@style/AttachmentMenuItem" android:id="@+id/option_file" android:text="File" app:drawableTopCompat="@drawable/ic_file" />
+
+    </LinearLayout>
+
+</LinearLayout>

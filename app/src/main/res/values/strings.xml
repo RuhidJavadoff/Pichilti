@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Pichilti</string>
+
+    <string name="welcome_to_anonymous_chat">Welcome to Anonymous Chat!</string>
+    <string name="region_label">Region</string>
+    <string name="username_hint">Enter your username</string>
+    <string name="region_not_found">Your region is not listed?</string>
+    <string name="send_request">Send a request!</string>
+    <string name="continue_button">Continue</string>
+    <string name="coming_soon">Coming soon!</string>
+    <string name="please_enter_username">Please enter a username</string>
+    <string name="please_select_azerbaijan">This region is not active yet. Please select Azerbaijan.</string>
+
+    <string name="welcome_to_main_page">Welcome to the Main Page! (DEMO)</string>
+
+    <string-array name="regions_array">
+        <item>Azerbaijan</item>
+        <item>Russia</item>
+        <item>Turkey</item>
+        <item>USA</item>
+        <item>Global</item>
+    </string-array>
+</resources>
